@@ -1,0 +1,27 @@
+---
+openapi: 3.0.2
+info:
+  title: simple-api
+  version: 1.0.0
+paths:
+  /books:
+    get:
+      responses:
+        "200":
+          description: List of books
+      summary: Get all books
+components:
+  schemas:
+    Book:
+      description: ""
+      required:
+      - id
+      - title
+      type: object
+      properties:
+        id:
+          description: ""
+          type: integer
+        title:
+          description: ""
+          type: string
